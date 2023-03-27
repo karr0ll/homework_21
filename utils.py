@@ -57,7 +57,7 @@ def check_query_availability(request, outbound_whs, item):
             is_checked = True
         else:
             request.quantity = int(input(f"Запрошенное количество превышает доступный остаток на складе "
-                                         f"'{request.from_}'.Доступно {outbound_whs.get_items()[item]}\n"
+                                         f"'{request.from_}'.Доступно {outbound_whs._get_items()[item]}\n"
                                          f"Введите новое количество товара\n"))
 
 

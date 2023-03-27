@@ -32,7 +32,7 @@ if __name__ == "__main__":
         # получает направление перемещения (конечный склад)
         items_list = ([key for key in location_class.items])
         while len(items_list) == 0:
-            print(f"Введите новое место отгрузки {whs_list}:")
+            print(f"Склад пуст. Введите новое место отгрузки {whs_list}:")
             from_ = check_outbound_whs_name(whs_list)
             if from_ == whs_list[0]:
                 location_class = store
